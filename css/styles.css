@@ -1,110 +1,148 @@
 /* General */
 body {
   font-family: 'Arial ', sans-serif;
-  background-color: #000000; /* fondo negro */
-  color: #FFFFFF; /* texto blanco */
+  background-color: whitesmoke;
+  color: black;
   margin: 0;
   padding: 0;
 }
 /* Encabezados */
 h1, h2 {
-  color: #00AEEF; /* azul brillante */
+  color: black; /* azul brillante */
 }
 
 /* Navegación */
-nav ul {
-  list-style-type: none;
-  padding: 10px;
-  background-color: #111111; /* gris muy oscuro */
-  text-align: center;
+.logo img{
+  width: 200px;
+  height: 100px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
   margin: 0;
+  padding: 0;
 }
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
+.nav-links li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #333;
   font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
-
+.navbar{
+  display: flex;
+  align-items: center;
+justify-content: space-evenly;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  
+}
+nav li {
+  display: flex;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
 nav a:hover {
   color: #00AEEF;
 }
-
 /* Secciones */
-section {
-  padding: 20px;
-  background-color: #111111; /* fondo oscuro grisáceo */
-  margin: 10px;
-  border: 1px solid #444444;
-}
 
-/* Imágenes */
-img {
-  width: 100%;
-  height: auto;
-  border: 2px solid #00AEEF;
-}
-
-/* Formularios */
-input, textarea {
-  background-color: #333333;
-  color: #FFFFFF;
-  border: 1px solid #00AEEF;
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-button {
-  background-color: #00AEEF;
-  color: #000000;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #007aab;
-}
-
-/* Footer */
-footer {
-  background-color: #000000;
-  color: #CCCCCC;
+.presentacion {
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 25px 20px;
+  background-color: #f8f9fa;
 }
 
-h3 {
-  color: #00AEEF;
-  font-size: 1.5em;
-  margin-top: 20px;
+.presentacion h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 10px;
-  border-left: 5px solid #00AEEF;
-  padding-left: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-section {
-  background-color: #111111;
-  padding: 30px;
+.presentacion p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contenedor-media {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.media-box {
+  width: 300px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-section p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 15px;
+.media-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
+.titulo-productos {
+font-size: 70px;
+  font-weight: bold;
+  color: #333;
+}
+.presentacion-2{
+  text-align: center;
+  padding: 1px 30px;
+  background-color: #f8f9fa;
+}
+/*GRID*/
+.presentacion-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: #f5f5f5;
+}
+
+.element {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+.element img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.element p {
+margin-top: 8px;
+    font-size: 25px;
+    line-height: 0.4;
+}
+footer{
+display: flex;
+    padding: 30px;
+    justify-content: center;
+}
 .whatsapp:hover {
   color: #00ef00;
 }
