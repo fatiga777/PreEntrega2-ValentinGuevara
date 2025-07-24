@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="icon" href="../Imagenes/brillocars.ico" />
+    <link rel="icon" href="../images/brillocars.ico" />
   </head>
   <body>
     <header>
@@ -21,40 +21,55 @@
     </header>
     <main>
       <section class="container">
-<div class="clase1 video-hero">
-  <video src="../videos/VideoBC.mp4" autoplay muted loop playsinline></video>
-</div>
-
-<div class="clase2">
-  <h2>TRANSFORMAMOS AUTOS EN EXPERIENCIAS VISUALES</h2>
-</div>
-        <div class="clase3">
-          <img src="../images/imagen2.ico" alt="Foto sobre nuestros comienzos">
+        <div class="clase1 video-hero">
+          <video
+            src="../videos/VideoBC.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
         </div>
-        <div class="clase4"><p>
-Desde nuestros comienzos en un pequeño taller de Parque Chas, soñamos con transformar la forma en que se cuida un auto. Hoy, con más de una década de experiencia, combinamos <strong>técnicas avanzadas</strong>, productos premium y un trato personalizado para que tu vehículo reciba lo mejor. En BrilloCars, tu auto brilla con identidad propia.
-</p>
-</div>
-<div class="clase5">
-  <h3>¿DÓNDE ESTAMOS?</h3>
-  <p>Campillo 2837, CABA, Parque Chas</p>
-</div>
+
+        <div class="clase2">
+          <h2>TRANSFORMAMOS AUTOS EN EXPERIENCIAS VISUALES</h2>
+        </div>
+        <div class="clase3">
+          <img
+            src="../images/imagen2.ico"
+            alt="Foto sobre nuestros comienzos"
+          />
+        </div>
+        <div class="clase4">
+          <p>
+            Desde nuestros comienzos en un pequeño taller de Parque Chas,
+            soñamos con transformar la forma en que se cuida un auto. Hoy, con
+            más de una década de experiencia, combinamos
+            <strong>técnicas avanzadas</strong>, productos premium y un trato
+            personalizado para que tu vehículo reciba lo mejor. En BrilloCars,
+            tu auto brilla con identidad propia.
+          </p>
+        </div>
+        <div class="clase5">
+          <h3>¿DÓNDE ESTAMOS?</h3>
+          <p>Campillo 2837, CABA, Parque Chas</p>
+        </div>
         <div class="clase6">
-          <img src="../images/historia.png" alt="Ubicación de BrilloCars">
+          <img src="../images/historia.png" alt="Ubicación de BrilloCars" />
         </div>
       </section>
     </main>
     <footer>
-    <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
+      <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
     </footer>
     <script>
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    const linkPage = link.getAttribute("href").split("/").pop();
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
+      const currentPage = window.location.pathname.split("/").pop();
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>

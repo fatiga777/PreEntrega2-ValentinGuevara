@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="icon" href="../Imagenes/brillocars.ico" />
+    <link rel="icon" href="../images/brillocars.ico" />
   </head>
   <body>
     <header>
@@ -20,51 +20,67 @@
       </nav>
     </header>
 
-  <main class="contenedor-servicios">
-    <section class="carrusel-servicios">
-      <img src="../images/serviciosdestacados.png" alt="Servicios Destacados">
-    </section>
-    <section class="intro-servicios">
-      <h1>Nuestros Servicios</h1>
-    </section>
-    <section class="servicio">
-      <img src="../images/pulidoceramico.jpg" alt="Pulido cerámico">
-      <div>
-        <h2>Pulido Cerámico</h2>
-        <p>Recuperamos el brillo original de tu vehículo con tecnología cerámica avanzada que protege por meses.</p>
-        <p class="estrellas">★★★★★</p>
-      </div>
-    </section>
-    <section class="servicio">
-      <div>
-        <h2>Protección Acrílica</h2>
-        <p>Aplicamos recubrimientos acrílicos que protegen tu pintura contra contaminantes y rayones.</p>
-        <p class="estrellas">★★★★☆</p>
-      </div>
-      <video src="../videos/proteccionacrilica.mp4" autoplay loop muted></video>
-    </section>
-    <section class="servicio">
-      <img src="../images/limpiezapremium.avif" alt="Limpieza Premium">
-      <div>
-        <h2>Limpieza Premium Interior</h2>
-        <p>Desinfección profunda, limpieza de tapizados, paneles y más. Dejamos tu auto como nuevo por dentro.</p>
-        <p class="estrellas">★★★★★</p>
-      </div>
-    </section>
+    <main class="contenedor-servicios">
+      <section class="carrusel-servicios">
+        <img
+          src="../images/serviciosdestacados.png"
+          alt="Servicios Destacados"
+        />
+      </section>
+      <section class="intro-servicios">
+        <h1>Nuestros Servicios</h1>
+      </section>
+      <section class="servicio">
+        <img src="../images/pulidoceramico.jpg" alt="Pulido cerámico" />
+        <div>
+          <h2>Pulido Cerámico</h2>
+          <p>
+            Recuperamos el brillo original de tu vehículo con tecnología
+            cerámica avanzada que protege por meses.
+          </p>
+          <p class="estrellas">★★★★★</p>
+        </div>
+      </section>
+      <section class="servicio">
+        <div>
+          <h2>Protección Acrílica</h2>
+          <p>
+            Aplicamos recubrimientos acrílicos que protegen tu pintura contra
+            contaminantes y rayones.
+          </p>
+          <p class="estrellas">★★★★☆</p>
+        </div>
+        <video
+          src="../videos/proteccionacrilica.mp4"
+          autoplay
+          loop
+          muted
+        ></video>
+      </section>
+      <section class="servicio">
+        <img src="../images/limpiezapremium.avif" alt="Limpieza Premium" />
+        <div>
+          <h2>Limpieza Premium Interior</h2>
+          <p>
+            Desinfección profunda, limpieza de tapizados, paneles y más. Dejamos
+            tu auto como nuevo por dentro.
+          </p>
+          <p class="estrellas">★★★★★</p>
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <footer>
-    <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
+    </footer>
     <script>
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    const linkPage = link.getAttribute("href").split("/").pop();
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
+      const currentPage = window.location.pathname.split("/").pop();
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>

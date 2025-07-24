@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="icon" href="../Imagenes/brillocars.ico" />
+    <link rel="icon" href="../images/brillocars.ico" />
   </head>
   <body>
     <header>
@@ -20,38 +20,47 @@
       </nav>
     </header>
     <main>
-<section class="contacto">
-  <h1>CONTACTANOS</h1>
-  <form>
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre">
+      <section class="contacto">
+        <h1>CONTACTANOS</h1>
+        <form>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" />
 
-    <label for="correo">Correo</label>
-    <input type="email" id="correo" name="correo">
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" />
 
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="mensaje"></textarea>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
 
-    <div class="botones-contacto">
-      <a href="https://www.instagram.com/brillocars_/" target="_blank" class="btn-contacto-ig">Instagram</a>
-      <a href="https://wa.me/+5491138146638" target="_blank" class="btn-contacto-ws">Whatsapp</a>
-    </div>
-  </form>
-</section>
-
+          <div class="botones-contacto">
+            <a
+              href="https://www.instagram.com/brillocars_/"
+              target="_blank"
+              class="btn-contacto-ig"
+              >Instagram</a
+            >
+            <a
+              href="https://wa.me/+5491138146638"
+              target="_blank"
+              class="btn-contacto-ws"
+              >Whatsapp</a
+            >
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer>
-    <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
+      <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
     </footer>
     <script>
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    const linkPage = link.getAttribute("href").split("/").pop();
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
-  });
-</script>
+      const currentPage = window.location.pathname.split("/").pop();
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>
