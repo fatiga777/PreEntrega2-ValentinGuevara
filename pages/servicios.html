@@ -10,9 +10,6 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
-          <img href="index.html" src="../images/logobrillocars.png" alt="Logo Brillo Cars">
-        </div>
         <ul class="nav-links">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
@@ -22,38 +19,44 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h2>Servicios</h2>
-        <article>
-          <h3>Pulido y Corrección de Pintura</h3>
-          <p>
-            Eliminamos rayones leves, marcas de remolino y defectos en la
-            pintura mediante un proceso profesional de pulido. Devolvemos el
-            brillo original de tu auto, dejando la superficie lisa y reluciente.
-          </p>
-        </article>
-        <article>
-          <h3>Tratamiento Cerámico</h3>
-          <p>
-            Aplicamos recubrimientos cerámicos de alta resistencia que protegen
-            la pintura contra rayos UV, suciedad, lluvia ácida y contaminantes.
-            Prolonga el brillo y facilita la limpieza del vehículo.
-          </p>
-        </article>
-        <article>
-          <h3>Detailing Interior</h3>
-          <p>
-            Limpieza profunda de alfombras, tapizados, techo, plásticos y cuero.
-            Utilizamos productos específicos para eliminar manchas, olores y
-            devolverle al interior de tu auto un aspecto como nuevo.
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <p>© 2025 - Brillo Cars</p>
-    </footer>
+
+  <main class="contenedor-servicios">
+    <section class="carrusel-servicios">
+      <img src="../images/serviciosdestacados.png" alt="Servicios Destacados">
+    </section>
+    <section class="intro-servicios">
+      <h1>Nuestros Servicios</h1>
+    </section>
+    <section class="servicio">
+      <img src="../images/pulidoceramico.jpg" alt="Pulido cerámico">
+      <div>
+        <h2>Pulido Cerámico</h2>
+        <p>Recuperamos el brillo original de tu vehículo con tecnología cerámica avanzada que protege por meses.</p>
+        <p class="estrellas">★★★★★</p>
+      </div>
+    </section>
+    <section class="servicio">
+      <div>
+        <h2>Protección Acrílica</h2>
+        <p>Aplicamos recubrimientos acrílicos que protegen tu pintura contra contaminantes y rayones.</p>
+        <p class="estrellas">★★★★☆</p>
+      </div>
+      <video src="../videos/proteccionacrilica.mp4" autoplay loop muted></video>
+    </section>
+    <section class="servicio">
+      <img src="../images/limpiezapremium.avif" alt="Limpieza Premium">
+      <div>
+        <h2>Limpieza Premium Interior</h2>
+        <p>Desinfección profunda, limpieza de tapizados, paneles y más. Dejamos tu auto como nuevo por dentro.</p>
+        <p class="estrellas">★★★★★</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
+  </footer>
     <script>
   const currentPage = window.location.pathname.split("/").pop();
   document.querySelectorAll(".nav-links a").forEach(link => {

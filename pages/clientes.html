@@ -10,9 +10,6 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
-          <img href="index.html" src="../images/logobrillocars.png" alt="Logo Brillo Cars">
-        </div>
         <ul class="nav-links">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
@@ -23,27 +20,38 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Clientes</h1>
-        <h2>Cliente 1</h2>
-        <img
-          src="../Imagenes/imagen1.ico"
-          alt="Ejemplo 1"
-          width="10"
-          height="10"
-        />
-        <h2>Cliente 2</h2>
-        <img
-          src="../Imagenes/imagen2.ico"
-          alt="Ejemplo 2"
-          width="10"
-          height="10"
-        />
-      </section>
-    </main>
+<section class="clientes">
+  <h2 class="titulo-clientes">NUESTROS CLIENTES</h2>
 
+  <div class="fila fila-top">
+    <div class="bloque-opinion">
+      <div class="perfil">
+        <span class="icono-usuario">👤</span>
+        <div class="estrellas">★★★★★</div>
+      </div>
+      <p class="texto-opinion">BrilloCars me dejó el auto impecable. ¡Volveré!</p>
+    </div>
+  <div class="fila fila-bottom">
+    <div class="bloque-opinion">
+      <div class="perfil">
+        <span class="icono-usuario">👤</span>
+        <div class="estrellas">★★★★☆</div>
+      </div>
+      <p class="texto-opinion">Muy buena atención y resultados.</p>
+    </div>
+  </div>
+    <div class="bloque-opinion">
+      <div class="perfil">
+        <span class="icono-usuario">👤</span>
+        <div class="estrellas">★★★★★</div>
+      </div>
+      <p class="texto-opinion">Los mejores en detailing, sin dudas.</p>
+    </div>
+</section>
+
+    </main>
     <footer>
-      <p>© 2025 - Brillo Cars</p>
+    <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
     </footer>
     <script>
   const currentPage = window.location.pathname.split("/").pop();
