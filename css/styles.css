@@ -474,6 +474,9 @@ button:hover {
    ============================== */
 @media (max-width: 768px) {
   /* Navbar vertical */
+  header{
+    position: static;
+  }
   .nav-links {
     flex-direction: column;
     gap: 15px;
