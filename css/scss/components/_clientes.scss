@@ -1,0 +1,48 @@
+.clientes {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+.titulo-clientes {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00aeef;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  &.fila-top {
+    align-items: flex-start;
+  }
+}
+
+.bloque-opinion {
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.texto-opinion {
+  font-size: 16px;
+  margin-bottom: 15px;
+}

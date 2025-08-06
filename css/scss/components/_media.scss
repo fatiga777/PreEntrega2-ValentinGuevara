@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+  header {
+    position: static;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+    align-items: center;
+
+    li a {
+      font-size: 18px;
+      padding: 8px 0;
+    }
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .presentacion h1 {
+    font-size: 32px;
+  }
+
+  .presentacion p {
+    font-size: 16px;
+  }
+
+  .contenedor-media {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .media-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .titulo-productos {
+    font-size: 40px;
+  }
+
+  .presentacion-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .element img {
+    width: 100%;
+    height: auto;
+  }
+
+  .element p {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  .container {
+    display: block;
+    padding: 10px;
+  }
+
+  .clase1 video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .clase2 h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .clase4 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .clase3 img,
+  .clase6 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .clase5 {
+    padding: 20px;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
