@@ -68,10 +68,11 @@ header {
   color: #333;
   font-weight: bold;
   font-size: 16px;
-  transition: color 0.3s;
+  transition: all 0.3s;
 }
 .nav-links li a:hover {
   color: #00aeef;
+  font-size: 1.5rem;
 }
 
 .navbar a.active {
@@ -90,7 +91,7 @@ header {
   background-color: #f8f9fa;
 }
 .presentacion h1 {
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   color: #00aeef;
   margin-bottom: 10px;
@@ -180,9 +181,9 @@ footer {
   font-family: Arial, sans-serif;
 }
 .contacto h1 {
-  font-size: 3em;
+  font-size: 70px;
   margin-bottom: 30px;
-  font-weight: 900;
+  font-weight: bold;
   color: #00aeef;
 }
 .contacto form {
@@ -253,6 +254,14 @@ button:hover {
 .btn-contacto-ws:hover {
   background-color: #6dfd79;
   color: white;
+}
+
+.transform {
+  transform: translate(10px, -10px);
+}
+
+.transform1 {
+  transform: translate(-10px, -10px);
 }
 
 .container {
@@ -398,7 +407,7 @@ button:hover {
 }
 
 .titulo-clientes {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;

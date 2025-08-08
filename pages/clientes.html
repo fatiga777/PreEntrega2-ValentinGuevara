@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clientes</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="icon" href="../images/brillocars.ico" />
   </head>
   <body>
@@ -21,17 +26,17 @@
     </header>
     <main>
 <section class="clientes">
-  <h2 class="titulo-clientes">NUESTROS CLIENTES</h2>
+  <h2 data-aos="zoom-in" class="titulo-clientes">NUESTROS CLIENTES</h2>
 
   <div class="fila fila-top">
-    <div class="bloque-opinion">
+    <div data-aos="zoom-in" class="bloque-opinion">
       <div class="perfil">
         <span class="icono-usuario">👤</span>
         <div class="estrellas">★★★★★</div>
       </div>
       <p class="texto-opinion">BrilloCars me dejó el auto impecable. ¡Volveré!</p>
     </div>
-  <div class="fila fila-bottom">
+  <div data-aos="zoom-in" class="fila fila-bottom">
     <div class="bloque-opinion">
       <div class="perfil">
         <span class="icono-usuario">👤</span>
@@ -40,7 +45,7 @@
       <p class="texto-opinion">Muy buena atención y resultados.</p>
     </div>
   </div>
-    <div class="bloque-opinion">
+    <div data-aos="zoom-in" class="bloque-opinion">
       <div class="perfil">
         <span class="icono-usuario">👤</span>
         <div class="estrellas">★★★★★</div>
@@ -53,6 +58,10 @@
     <footer>
     <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <script>
   const currentPage = window.location.pathname.split("/").pop();
   document.querySelectorAll(".nav-links a").forEach(link => {

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="icon" href="../images/brillocars.ico" />
   </head>
   <body>
@@ -21,18 +26,18 @@
     </header>
 
     <main class="contenedor-servicios">
-      <section class="carrusel-servicios">
+      <section data-aos="zoom-in" class="carrusel-servicios">
         <img
           src="../images/serviciosdestacados.png"
           alt="Servicios Destacados"
         />
       </section>
       <section class="intro-servicios">
-        <h1>Nuestros Servicios</h1>
+        <h1 data-aos="zoom-in">Nuestros Servicios</h1>
       </section>
       <section class="servicio">
-        <img src="../images/pulidoceramico.jpg" alt="Pulido cerámico" />
-        <div>
+        <img data-aos="zoom-in" src="../images/pulidoceramico.jpg" alt="Pulido cerámico" />
+        <div data-aos="zoom-out-left">
           <h2>Pulido Cerámico</h2>
           <p>
             Recuperamos el brillo original de tu vehículo con tecnología
@@ -42,7 +47,7 @@
         </div>
       </section>
       <section class="servicio">
-        <div>
+        <div data-aos="zoom-out-right">
           <h2>Protección Acrílica</h2>
           <p>
             Aplicamos recubrimientos acrílicos que protegen tu pintura contra
@@ -50,7 +55,7 @@
           </p>
           <p class="estrellas">★★★★☆</p>
         </div>
-        <video
+        <video data-aos="zoom-in"
           src="../videos/proteccionacrilica.mp4"
           autoplay
           loop
@@ -58,8 +63,8 @@
         ></video>
       </section>
       <section class="servicio">
-        <img src="../images/limpiezapremium.avif" alt="Limpieza Premium" />
-        <div>
+        <img data-aos="zoom-in" src="../images/limpiezapremium.avif" alt="Limpieza Premium" />
+        <div data-aos="zoom-out-left">
           <h2>Limpieza Premium Interior</h2>
           <p>
             Desinfección profunda, limpieza de tapizados, paneles y más. Dejamos
@@ -73,6 +78,10 @@
     <footer>
       <p>&copy; 2025 BrilloCars. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <script>
       const currentPage = window.location.pathname.split("/").pop();
       document.querySelectorAll(".nav-links a").forEach((link) => {
