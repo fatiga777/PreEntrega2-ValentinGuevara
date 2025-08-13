@@ -4,19 +4,22 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: "Arial", sans-serif;
   background-color: whitesmoke;
   color: black;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
